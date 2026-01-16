@@ -5,7 +5,7 @@ export default function HeroContent() {
   return (
     <div className="w-full">
       {/* Hero Banner Section */}
-      <section className="relative w-full h-[600px] overflow-hidden">
+      <section className="relative w-full h-[700px] overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image src="/images/slide_1.png" alt="Hero Background" fill className="object-cover" priority />
@@ -50,13 +50,6 @@ export default function HeroContent() {
               Dergiyi Görüntüle
               <Image src="/icons/right.svg" alt="Ok" width={16} height={16} />
             </Link>
-          </div>
-
-          {/* Right - Magazine Cover */}
-          <div className="absolute right-[5%] top-[50%]">
-            <div className="relative w-[480px] h-[600px] transform rotate-[8deg] drop-shadow-2xl">
-              <Image src="/images/dergison_1.png" alt="Dergi Kapağı" fill className="object-contain" />
-            </div>
           </div>
         </div>
       </section>

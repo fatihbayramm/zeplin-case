@@ -6,6 +6,8 @@
   --primary-blue: #273d89;
   --primary-green: #a8b95e;
   --primary-red: #db0d15;
+  --primary-gray: #676a73;
+  --secondary-dark: #2a2c31;
   --footer-bg: #081542;
   --footer-red: #db0d15;
 }
@@ -16,6 +18,8 @@
   --color-primary-blue: var(--primary-blue);
   --color-primary-green: var(--primary-green);
   --color-primary-red: var(--primary-red);
+  --color-primary-gray: var(--primary-gray);
+  --color-secondary-dark: var(--secondary-dark);
   --color-footer-bg: var(--footer-bg);
   --color-footer-red: var(--footer-red);
   --font-sans: var(--font-inter);
