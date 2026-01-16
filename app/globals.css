@@ -5,6 +5,9 @@
   --foreground: #171717;
   --primary-blue: #273d89;
   --primary-green: #a8b95e;
+  --primary-red: #db0d15;
+  --footer-bg: #081542;
+  --footer-red: #db0d15;
 }
 
 @theme inline {
@@ -12,6 +15,9 @@
   --color-foreground: var(--foreground);
   --color-primary-blue: var(--primary-blue);
   --color-primary-green: var(--primary-green);
+  --color-primary-red: var(--primary-red);
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-red: var(--footer-red);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
