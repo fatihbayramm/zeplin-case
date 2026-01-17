@@ -74,7 +74,7 @@ export default function MagazineSection() {
       {/* Cards Container */}
       <div className="relative overflow-hidden max-w-[1600px] mx-auto">
         <div
-          className="flex gap-6 transition-transform duration-500 ease-in-out"
+          className="flex gap-6 transition-transform duration-500 ease-in-out p-10"
           style={{
             transform: `translateX(-${currentIndex * (100 / cardsToShow)}%)`,
           }}
