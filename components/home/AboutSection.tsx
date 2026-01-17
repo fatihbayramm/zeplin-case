@@ -17,7 +17,7 @@ export default function AboutSection() {
 
           {/* Detail Button */}
           <Link
-            href="/hakkinda"
+            href="#"
             className="inline-flex items-center gap-10 border border-gray-300 text-secondary-dark px-6 py-3 rounded-full text-[14px] hover:bg-primary-blue hover:text-white transition-colors"
           >
             Detay

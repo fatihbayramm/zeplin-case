@@ -4,45 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MagazineCard from "@/components/cards/MagazineCard";
-
-const magazines = [
-  {
-    title: "Teknoloji ve Dijital Dergisi",
-    coverImage: "/images/magazine.png",
-    cilt: 1,
-    sayi: 1,
-    date: "Aralık 2022",
-    isNew: true,
-    slug: "teknoloji-dijital-1",
-  },
-  {
-    title: "Teknoloji ve Dijital Dergisi",
-    coverImage: "/images/magazine.png",
-    cilt: 1,
-    sayi: 2,
-    date: "Mart 2023",
-    isNew: true,
-    slug: "teknoloji-dijital-2",
-  },
-  {
-    title: "Teknoloji ve Dijital Dergisi",
-    coverImage: "/images/magazine.png",
-    cilt: 2,
-    sayi: 1,
-    date: "Haziran 2023",
-    isNew: true,
-    slug: "teknoloji-dijital-3",
-  },
-  {
-    title: "Teknoloji ve Dijital Dergisi",
-    coverImage: "/images/magazine.png",
-    cilt: 2,
-    sayi: 2,
-    date: "Eylül 2023",
-    isNew: false,
-    slug: "teknoloji-dijital-4",
-  },
-];
+import { magazines } from "@/data/magazines/magazines";
 
 export default function MagazineSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -95,7 +57,7 @@ export default function MagazineSection() {
         <div>
           {/* View All Button */}
           <Link
-            href="/sayilar"
+            href="#"
             className="inline-flex items-center gap-2 border border-gray-300 text-secondary-dark px-6 py-2 rounded-full text-[14px] hover:border-primary-blue hover:text-primary-blue transition-colors"
           >
             Tümünü Görüntüle

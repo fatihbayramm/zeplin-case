@@ -4,9 +4,12 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary-blue: #273d89;
+  --secondary-blue: #00c3d0;
   --primary-green: #a8b95e;
   --primary-red: #db0d15;
   --primary-gray: #676a73;
+  --primary-dark: #112053;
+  --secondary-gray: #f6f8ff;
   --secondary-dark: #2a2c31;
   --footer-bg: #081542;
   --footer-red: #db0d15;
@@ -16,9 +19,12 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary-blue: var(--primary-blue);
+  --color-secondary-blue: var(--secondary-blue);
   --color-primary-green: var(--primary-green);
   --color-primary-red: var(--primary-red);
   --color-primary-gray: var(--primary-gray);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary-gray: var(--secondary-gray);
   --color-secondary-dark: var(--secondary-dark);
   --color-footer-bg: var(--footer-bg);
   --color-footer-red: var(--footer-red);

@@ -44,7 +44,7 @@ export default function HeroContent() {
 
             {/* CTA Button */}
             <Link
-              href="/dergi"
+              href="#"
               className="inline-flex items-center gap-2 bg-primary-blue text-[16px] text-white px-6 py-3 rounded-full font-medium hover:bg-primary-blue/80 transition-colors"
             >
               Dergiyi Görüntüle

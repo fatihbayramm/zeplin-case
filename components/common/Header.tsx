@@ -7,13 +7,16 @@ export default function Header() {
       {/* Top Bar - Dark Blue */}
       <div className="bg-[#273D89] h-[75px] flex items-center justify-between px-6">
         {/* Logo Section */}
-        <div className="flex items-center gap-3">
-          {/* Logo Circle */}
-          <div className="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center border-4 border-[#273D89] shadow-[0_0_0_4px_#A8B95E]">
-            <span className="text-[#273D89] font-bold text-3xl italic">P</span>
+        <Link href="/">
+          <div className="flex items-center gap-3">
+            {/* Logo Circle */}
+
+            <div className="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center border-4 border-[#273D89] shadow-[0_0_0_4px_#A8B95E]">
+              <span className="text-[#273D89] font-bold text-3xl italic">P</span>
+            </div>
+            <span className="text-white text-2xl font-medium tracking-wide">profuture</span>
           </div>
-          <span className="text-white text-2xl font-medium tracking-wide">profuture</span>
-        </div>
+        </Link>
 
         {/* Center - Email */}
         <div className="flex items-center gap-2 bg-[#3A4F9A] rounded-full px-4 py-2">
@@ -57,28 +60,19 @@ export default function Header() {
 
         {/* Navigation Links */}
         <nav className="flex items-center gap-8">
-          <Link
-            href="/amac-ve-kapsam"
-            className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors"
-          >
+          <Link href="#" className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors">
             Amaç ve Kapsam
           </Link>
-          <Link
-            href="/etik-ilkeler"
-            className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors"
-          >
+          <Link href="#" className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors">
             Etik İlkeler ve Yayın Politikası
           </Link>
-          <Link
-            href="/makale-cagrilari"
-            className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors"
-          >
+          <Link href="#" className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors">
             Makale Çağrıları
           </Link>
-          <Link href="/sayilar" className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors">
+          <Link href="#" className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors">
             Sayılar
           </Link>
-          <Link href="/iletisim" className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors">
+          <Link href="#" className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors">
             İletişim
           </Link>
         </nav>
@@ -87,7 +81,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           {/* Dergi Kurulu Button */}
           <Link
-            href="/dergi-kurulu"
+            href="#"
             className="flex items-center gap-2 bg-[#273D89] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#1e2f6a] transition-colors"
           >
             <svg width="20" height="18" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +116,7 @@ export default function Header() {
 
           {/* Yazar Rehberi Button */}
           <Link
-            href="/yazar-rehberi"
+            href="#"
             className="flex items-center gap-2 bg-[#A8B95E] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#96a752] transition-colors"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

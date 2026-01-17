@@ -1,0 +1,38 @@
+export const magazines = [
+  {
+    title: "Teknoloji ve Dijital Dergisi",
+    coverImage: "/images/magazine.png",
+    cilt: 1,
+    sayi: 1,
+    date: "Aralık 2022",
+    isNew: true,
+    slug: "teknoloji-dijital-1",
+  },
+  {
+    title: "Teknoloji ve Dijital Dergisi",
+    coverImage: "/images/magazine.png",
+    cilt: 1,
+    sayi: 1,
+    date: "Aralık 2022",
+    isNew: true,
+    slug: "teknoloji-dijital-2",
+  },
+  {
+    title: "Teknoloji ve Dijital Dergisi",
+    coverImage: "/images/magazine.png",
+    cilt: 1,
+    sayi: 1,
+    date: "Aralık 2022",
+    isNew: true,
+    slug: "teknoloji-dijital-3",
+  },
+  {
+    title: "Teknoloji ve Dijital Dergisi",
+    coverImage: "/images/magazine.png",
+    cilt: 1,
+    sayi: 1,
+    date: "Aralık 2022",
+    isNew: false,
+    slug: "teknoloji-dijital-4",
+  },
+];
