@@ -5,22 +5,18 @@ import { articles } from "@/data/articles/articles";
 
 export default function TextSection() {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-20">
       <div className="max-w-[1600px] mx-auto px-6">
         <div className="flex gap-8">
-          {/* Left - Magazine Cover */}
           <div className="shrink-0 relative shadow-xl rounded-2xl">
-            {/* Red Banner - Son Sayı */}
             <div className="absolute left-0 top-[20%] z-20">
               <Image src="/images/text_image_2.png" alt="Son Sayı" width={65} height={155} />
             </div>
 
-            {/* Magazine Cover */}
             <div className="relative w-[400px] h-[550px]">
               <Image src="/images/text_image.png" alt="Son Sayı" fill className="object-contain" />
             </div>
 
-            {/* Action Buttons */}
             <div className="flex items-center justify-center gap-3 mt-4">
               <button className="cursor-pointer rounded-full border border-gray-300 flex items-center justify-center hover:border-primary-blue hover:text-primary-blue transition-colors">
                 <Image src="/icons/download.svg" alt="İndir" width={55} height={55} />
@@ -35,9 +31,7 @@ export default function TextSection() {
             </div>
           </div>
 
-          {/* Right - Articles List */}
           <div className="flex-1">
-            {/* Header */}
             <div className="flex items-center justify-between mb-6">
               <div>
                 <h2 className="text-primary-gray text-[22px] mb-1">Profuture Teknoloji Dergisi</h2>
@@ -52,7 +46,6 @@ export default function TextSection() {
               </Link>
             </div>
 
-            {/* Articles Grid */}
             <div className="grid grid-cols-1 gap-4">
               {articles.map((article, index) => (
                 <TextCard key={index} {...article} />
