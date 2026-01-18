@@ -14,13 +14,19 @@ export default function MagazineSection() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
+        // Mobile
         setCardsToShow(1);
         setGapSize(16);
+      } else if (window.innerWidth < 1280) {
+        // Tablet (768px - 1279px) and 1024px
+        setCardsToShow(2);
+        setGapSize(20);
       } else {
+        // Desktop (1280px+)
         setCardsToShow(3);
         setGapSize(24);
       }
-      // Reset index when switching between mobile/desktop
+      // Reset index when switching between breakpoints
       setCurrentIndex(0);
     };
 
@@ -105,9 +111,10 @@ export default function MagazineSection() {
       {/* Cards Container */}
       <div className="relative overflow-hidden max-w-[1600px] mx-auto px-4 md:px-0">
         <div
-          className="flex gap-4 md:gap-6 transition-transform duration-500 ease-in-out py-4 md:p-10"
+          className="flex transition-transform duration-500 ease-in-out py-4 md:p-10"
           style={{
             transform: `translateX(-${currentIndex * (100 / cardsToShow)}%)`,
+            gap: `${gapSize}px`,
           }}
         >
           {magazines.map((magazine, index) => (
