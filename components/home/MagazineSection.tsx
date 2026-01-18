@@ -27,15 +27,12 @@ export default function MagazineSection() {
   return (
     <section className="bg-white py-16">
       <div className="flex justify-between max-w-[1600px] mx-auto px-6">
-        {/* Header */}
         <div className="flex gap-10 mb-8">
-          {/* Title */}
           <div>
             <h2 className="text-primary-gray text-[22px]">Sayılar</h2>
             <h2 className="text-primary-blue text-[28px] font-bold">Dergiler</h2>
           </div>
 
-          {/* Navigation Arrows */}
           <div className="flex items-center gap-3">
             <button
               onClick={scrollLeft}
@@ -55,7 +52,6 @@ export default function MagazineSection() {
         </div>
 
         <div>
-          {/* View All Button */}
           <Link
             href="#"
             className="inline-flex items-center gap-2 border border-gray-300 text-secondary-dark px-6 py-4 rounded-full text-[14px] hover:border-primary-blue hover:text-primary-blue transition-colors"
@@ -71,7 +67,6 @@ export default function MagazineSection() {
         </div>
       </div>
 
-      {/* Cards Container */}
       <div className="relative overflow-hidden max-w-[1600px] mx-auto">
         <div
           className="flex gap-6 transition-transform duration-500 ease-in-out p-10"

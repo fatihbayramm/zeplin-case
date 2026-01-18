@@ -4,16 +4,12 @@ import Link from "next/link";
 export default function HeroContent() {
   return (
     <div className="w-full">
-      {/* Hero Banner Section */}
       <section className="relative w-full h-[700px] overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0">
           <Image src="/images/slide_1.png" alt="Hero Background" fill className="object-cover" priority />
         </div>
 
-        {/* Content Overlay */}
         <div className="relative z-10 h-full max-w-[1600px] mx-auto px-6 flex items-center">
-          {/* Left Content */}
           <div className="max-w-[500px] text-white">
             <h1 className="text-[28px] font-bold mb-1">Profuture Teknoloji Dergisi</h1>
             <h2 className="text-[32px] font-bold mb-4">Son Sayı Yayında</h2>
@@ -22,7 +18,6 @@ export default function HeroContent() {
               şimdi erişin.
             </p>
 
-            {/* Info Row */}
             <div className="flex items-center gap-6 mb-6 text-[16px]">
               <div className="flex items-center gap-2">
                 <Image src="/icons/cilt.svg" alt="Cilt" width={16} height={16} />
@@ -42,7 +37,6 @@ export default function HeroContent() {
               </div>
             </div>
 
-            {/* CTA Button */}
             <Link
               href="#"
               className="inline-flex items-center gap-2 bg-primary-blue text-[16px] text-white px-6 py-3 rounded-full font-medium hover:bg-primary-blue/80 transition-colors"

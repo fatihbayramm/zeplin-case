@@ -5,9 +5,6 @@ export const articles = [
     title: "Türkiye'nin Teknoloji Politikaları ve Döngüsel Ekonomi",
     pageRange: "12-28",
     authors: ["Elif Başkaya Acar", "Emre Taran", "Halil Başar"],
-    viewUrl: "/makale/1",
-    downloadUrl: "/makale/1/indir",
-    shareUrl: "/makale/1/paylas",
   },
   {
     category: "İklim",
@@ -15,9 +12,6 @@ export const articles = [
     title: "Türkiye'nin Teknoloji Politikaları ve Döngüsel Ekonomi",
     pageRange: "12-28",
     authors: ["Elif Başkaya Acar", "Emre Taran", "Halil Başar"],
-    viewUrl: "/makale/2",
-    downloadUrl: "/makale/2/indir",
-    shareUrl: "/makale/2/paylas",
   },
   {
     category: "İklim",
@@ -25,9 +19,6 @@ export const articles = [
     title: "Türkiye'nin Teknoloji Politikaları ve Döngüsel Ekonomi",
     pageRange: "12-28",
     authors: ["Elif Başkaya Acar", "Emre Taran", "Halil Başar"],
-    viewUrl: "/makale/3",
-    downloadUrl: "/makale/3/indir",
-    shareUrl: "/makale/3/paylas",
   },
   {
     category: "İklim",
@@ -35,8 +26,5 @@ export const articles = [
     title: "Türkiye'nin Teknoloji Politikaları ve Döngüsel Ekonomi",
     pageRange: "12-28",
     authors: ["Elif Başkaya Acar", "Emre Taran", "Halil Başar"],
-    viewUrl: "/makale/4",
-    downloadUrl: "/makale/4/indir",
-    shareUrl: "/makale/4/paylas",
   },
 ];

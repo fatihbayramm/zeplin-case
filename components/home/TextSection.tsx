@@ -22,7 +22,7 @@ export default function TextSection() {
                 <Image src="/icons/download.svg" alt="İndir" width={55} height={55} />
               </button>
               <Link
-                href="/son-sayi"
+                href="#"
                 className="bg-primary-blue text-white px-6 py-4 rounded-full text-[14px] font-medium hover:bg-primary-blue/80 transition-colors flex items-center gap-2"
               >
                 <Image src="/icons/eye.svg" alt="Görüntüle" width={24} height={24} />

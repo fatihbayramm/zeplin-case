@@ -5,7 +5,6 @@ export default function AboutSection() {
   return (
     <section className="relative bg-white py-16">
       <div className="max-w-[1600px] mx-auto px-6 flex items-center">
-        {/* Left Content */}
         <div className="max-w-[700px]">
           <p className="text-primary-gray text-[22px] mb-2">Dergi Amacı ve Kapsamı</p>
           <h3 className="text-primary-blue text-[28px] font-bold mb-4">Profuture Teknoloji Dergisi</h3>
@@ -15,7 +14,6 @@ export default function AboutSection() {
             uluslararası hakemli ve açık erişimli bir akademik yayındır.
           </p>
 
-          {/* Detail Button */}
           <Link
             href="#"
             className="inline-flex items-center gap-10 border border-gray-300 text-secondary-dark px-6 py-3 rounded-full text-[14px] hover:bg-primary-blue hover:text-white transition-colors"
@@ -30,7 +28,6 @@ export default function AboutSection() {
           </Link>
         </div>
 
-        {/* Right - Magazine Cover - Overlapping with Hero */}
         <div className="flex-1 flex justify-end">
           <div className="relative w-[720px] h-[820px] -mt-[400px] transform rotate-[8deg] drop-shadow-2xl">
             <Image src="/images/dergison_1.png" alt="Dergi Kapağı" fill className="object-contain" />

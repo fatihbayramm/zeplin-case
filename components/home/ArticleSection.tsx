@@ -35,7 +35,7 @@ export default function ArticleSection() {
 
               <div className="flex justify-center">
                 <Link
-                  href="/makale-gonder"
+                  href="#"
                   className="inline-flex items-center gap-6 bg-primary-red text-white px-8 py-4 rounded-full text-[16px] font-semibold hover:bg-[#c00c14] transition-colors"
                 >
                   Makale Gönder
