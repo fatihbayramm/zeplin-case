@@ -5,7 +5,6 @@ export default function AboutSection() {
   return (
     <section className="relative bg-white py-10 md:py-16">
       <div className="max-w-[1600px] mx-auto px-4 md:px-6 flex flex-col md:flex-row md:items-center gap-6 md:gap-0">
-        {/* Left - Content */}
         <div className="w-full md:max-w-[700px]">
           <p className="text-primary-gray text-[18px] md:text-[22px] mb-2">Dergi Amacı ve Kapsamı</p>
           <h3 className="text-primary-blue text-[24px] md:text-[28px] font-bold mb-3 md:mb-4">
@@ -38,9 +37,8 @@ export default function AboutSection() {
           </Link>
         </div>
 
-        {/* Right - Magazine Cover */}
         <div className="hidden lg:flex flex-1 justify-end">
-          <div className="relative w-[720px] h-[820px] -mt-[400px] transform rotate-[8deg] drop-shadow-2xl">
+          <div className="relative lg:w-[480px] lg:h-[546px] xl:w-[720px] xl:h-[820px] lg:-mt-[260px] xl:-mt-[400px] transform rotate-[8deg] drop-shadow-2xl transition-all duration-300">
             <Image src="/images/dergison_1.png" alt="Dergi Kapağı" fill className="object-contain" />
           </div>
         </div>
