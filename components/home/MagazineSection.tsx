@@ -58,7 +58,7 @@ export default function MagazineSection() {
           {/* View All Button */}
           <Link
             href="#"
-            className="inline-flex items-center gap-2 border border-gray-300 text-secondary-dark px-6 py-2 rounded-full text-[14px] hover:border-primary-blue hover:text-primary-blue transition-colors"
+            className="inline-flex items-center gap-2 border border-gray-300 text-secondary-dark px-6 py-4 rounded-full text-[14px] hover:border-primary-blue hover:text-primary-blue transition-colors"
           >
             Tümünü Görüntüle
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
