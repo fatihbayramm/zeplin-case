@@ -28,7 +28,7 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="bg-white flex items-center justify-between p-2">
+          <div className="bg-white flex items-center justify-between p-2 h-[98px]">
             <div>
               <Link href="/">
                 <Image src="/icons/home_2.svg" alt="Home" width={24} height={24} />
