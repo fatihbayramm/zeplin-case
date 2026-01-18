@@ -1,6 +1,14 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 export default function Header() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 1024);
+  }, []);
+
   return (
     <header className="sticky top-0 z-1000">
       <div className="flex">
@@ -66,6 +74,17 @@ export default function Header() {
           </div>
         </div>
       </div>
+
+      {isMobile && (
+        <div className="bg-white flex items-center justify-between p-3">
+          <div>
+            <Link href="/">
+              <Image src="/icons/home_2.svg" alt="Home" width={30} height={30} />
+            </Link>
+          </div>
+          <div>hamburger icon gelecek</div>
+        </div>
+      )}
     </header>
   );
 }
