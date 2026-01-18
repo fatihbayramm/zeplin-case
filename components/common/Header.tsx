@@ -3,133 +3,59 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="h-[135px] w-full sticky top-0 z-1000">
-      {/* Top Bar - Dark Blue */}
-      <div className="bg-[#273D89] h-[75px] flex items-center justify-between px-6">
-        {/* Logo Section */}
-        <Link href="/">
-          <Image src="/logo/logo.svg" alt="Profuture" width={283} height={91} />
-        </Link>
-
-        {/* Center - Email */}
-        <div className="flex items-center gap-2 bg-[#3A4F9A] rounded-full px-4 py-2">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M18 3H6C3.24316 3 1 5.24316 1 8V16C1 18.7568 3.24316 21 6 21H18C20.7568 21 23 18.7568 23 16V8C23 5.24316 20.7568 3 18 3ZM16.1038 11.6902L20.938 7.39294C20.9785 7.58911 21 7.79205 21 8V16C21 16.1823 20.9775 16.3589 20.9462 16.5322L16.1038 11.6902ZM18 5C18.7089 5 19.3524 5.25732 19.8663 5.66992L12.6646 12.0713C12.2847 12.4092 11.7129 12.4072 11.3359 12.0723L4.13367 5.66992C4.64764 5.25732 5.29114 5 6 5H18ZM3.05377 16.5322C3.02252 16.3589 3 16.1823 3 16V8C3 7.79205 3.02154 7.58911 3.06201 7.393L7.896 11.6904L3.05377 16.5322ZM6 19C5.27844 19 4.62457 18.7336 4.10651 18.3076L9.39313 13.0214L10.0073 13.5674C10.5752 14.0713 11.2876 14.3232 12 14.3232C12.7124 14.3232 13.4248 14.0713 13.9932 13.5664L14.6066 13.0211L19.8935 18.3076C19.3754 18.7336 18.7216 19 18 19H6Z"
-              fill="white"
-            />
-          </svg>
-          <span className="text-white text-sm">profuture@gmail.com</span>
-        </div>
-
-        {/* Right - Journal Info */}
-        <div className="flex items-center gap-6 text-white text-sm">
-          <div className="flex items-center gap-2">
-            <span className="text-gray-300">ISSN:</span>
-            <span className="font-semibold">345-255</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-gray-300">Başlangıç</span>
-            <span className="font-semibold">2025</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-gray-300">Periyot:</span>
-            <span className="font-semibold">Yılda 2 Sayı</span>
-          </div>
-        </div>
+    <header className="h-[135px] w-full sticky top-0 z-1000 flex bg-white">
+      <div className="w-[381px] h-[135px] bg-primary-blue flex items-center justify-center rounded-tr-[90px]">
+        <Image src="/logo/logo.svg" alt="Profuture" width={283} height={91} />
       </div>
 
-      {/* Bottom Navigation Bar - White */}
-      <div className="bg-white h-[60px] flex items-center justify-between px-6 border-b border-gray-100">
-        {/* Home Icon */}
-        <Link href="/" className="flex items-center justify-center">
-          <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M10.2354 1.96692C12.8493 -0.63556 17.0631 -0.655376 19.7021 1.90637L19.7646 1.9679L24.6406 6.82825V3.0304C24.6408 2.3205 25.2168 1.74524 25.9268 1.74524C26.6366 1.7453 27.2117 2.32054 27.2119 3.0304V9.38879L29.6221 11.7921C30.1248 12.2935 30.1254 13.1076 29.624 13.6105C29.1227 14.1129 28.3093 14.1137 27.8066 13.6124L27.207 13.0148L27.2002 19.8556V19.8575C27.1896 23.5712 24.1735 26.5751 20.46 26.5704H9.54492L9.19824 26.5616C5.643 26.3858 2.81161 23.4517 2.80469 19.8517V13.0021L2.19336 13.6124C1.69052 14.1138 0.876327 14.1132 0.375 13.6105C-0.126291 13.1076 -0.12479 12.2935 0.37793 11.7921L3.18262 8.99622L10.2354 1.9679V1.96692ZM17.1426 22.2335C17.1426 21.0501 16.1835 20.091 15 20.0909C13.8165 20.0909 12.8574 21.05 12.8574 22.2335V23.9991H17.1426V22.2335ZM19.7139 23.9991H20.4619C22.7574 24.0027 24.6222 22.1462 24.6289 19.8507L24.6387 10.4572L17.9502 3.78918L17.9111 3.7511C16.277 2.16514 13.6682 2.17797 12.0498 3.78918L5.37598 10.4406V19.9005C5.40912 22.1728 7.2636 24.0027 9.54297 23.9991H10.2852V22.2335C10.2852 19.63 12.3964 17.5197 15 17.5197C17.6036 17.5197 19.7139 19.63 19.7139 22.2335V23.9991Z"
-              fill="#A8B95E"
-            />
-          </svg>
-        </Link>
+      <div className="w-full">
+        <div className="bg-primary-dark flex items-center justify-between p-2">
+          <div className="flex items-center gap-3">
+            <Image src="/icons/message_2.svg" alt="Message" width={24} height={24} />
+            <span className="text-white text-[14px]">profuture@gmail.com</span>
+          </div>
 
-        {/* Navigation Links */}
-        <nav className="flex items-center gap-8">
-          <Link href="#" className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors">
-            Amaç ve Kapsam
-          </Link>
-          <Link href="#" className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors">
-            Etik İlkeler ve Yayın Politikası
-          </Link>
-          <Link href="#" className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors">
-            Makale Çağrıları
-          </Link>
-          <Link href="#" className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors">
-            Sayılar
-          </Link>
-          <Link href="#" className="text-gray-700 hover:text-[#273D89] text-sm font-medium transition-colors">
-            İletişim
-          </Link>
-        </nav>
+          <div className="text-white text-[17px] flex items-center gap-5 mr-20">
+            <span>
+              ISSN: <span className="font-bold">345-255</span>
+            </span>
+            <span>
+              Başlangıç <span className="font-bold">2025</span>
+            </span>
+            <span>
+              Periyot: <span className="font-bold">Yılda 2 Sayı</span>
+            </span>
+          </div>
+        </div>
 
-        {/* Action Buttons */}
-        <div className="flex items-center gap-3">
-          {/* Dergi Kurulu Button */}
-          <Link
-            href="#"
-            className="flex items-center gap-2 bg-[#273D89] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#1e2f6a] transition-colors"
-          >
-            <svg width="20" height="18" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clipPath="url(#clip0_kurul)">
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M15.0934 13.8075C15.7511 13.0812 16.1511 12.1275 16.1511 11.0862C16.1511 8.8375 14.2934 7 12 7C9.70669 7 7.84891 8.82875 7.84891 11.0862C7.84891 12.1275 8.24891 13.09 8.90669 13.8075C7.54669 14.7612 6.66669 16.3187 6.66669 18.0862V18.6725C6.66669 19.9587 7.73335 21.0087 9.04002 21.0087H14.9689C16.2756 21.0087 17.3422 19.9587 17.3422 18.6725V18.0862C17.3422 16.3275 16.4534 14.7612 15.1022 13.8075H15.0934ZM12 9.33625C12.9778 9.33625 13.7778 10.1237 13.7778 11.0862C13.7778 12.0487 12.9778 12.8362 12 12.8362C11.0222 12.8362 10.2222 12.0487 10.2222 11.0862C10.2222 10.1237 11.0222 9.33625 12 9.33625ZM14.96 18.6637H9.03113V18.0775C9.03113 16.4675 10.3556 15.1637 11.9911 15.1637C13.6267 15.1637 14.9511 16.4762 14.9511 18.0775V18.6637H14.96Z"
-                  fill="white"
-                />
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M7.33333 12.5038C7.18222 12.005 6.73778 11.6638 6.21333 11.6638H2.37333V11.2C2.37333 9.75625 3.38667 8.44375 4.83556 8.2075C5.61778 8.085 6.34667 8.26 6.94222 8.63625C7.28 8.855 7.72444 8.7325 7.94667 8.4C8.24 7.98 8.59556 7.595 9.00445 7.28875C8.82667 7.11375 8.63111 6.95625 8.42667 6.8075C9.08444 6.08125 9.48444 5.1275 9.48444 4.08625C9.48444 1.82875 7.61778 0 5.33333 0C3.04889 0 1.18222 1.82875 1.18222 4.08625C1.18222 5.1275 1.58222 6.08125 2.24 6.8075C0.888889 7.76125 0 9.31875 0 11.0863V11.6638C0 12.95 1.06667 14 2.37333 14H6.21333C7.00444 14 7.56444 13.2475 7.33333 12.5038ZM5.33333 2.33625C6.31111 2.33625 7.11111 3.115 7.11111 4.08625C7.11111 5.0575 6.31111 5.83625 5.33333 5.83625C4.35556 5.83625 3.55556 5.04875 3.55556 4.08625C3.55556 3.12375 4.35556 2.33625 5.33333 2.33625Z"
-                  fill="white"
-                />
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M21.76 6.8075C22.4178 6.08125 22.8178 5.1275 22.8178 4.08625C22.8178 1.82875 20.9511 0 18.6667 0C16.3822 0 14.5156 1.82875 14.5156 4.08625C14.5156 5.1275 14.9156 6.08125 15.5733 6.8075C15.3689 6.95625 15.1733 7.11375 14.9956 7.28875C15.4045 7.60375 15.76 7.98 16.0533 8.4C16.2756 8.7325 16.72 8.855 17.0578 8.63625C17.6445 8.26 18.3822 8.07625 19.1556 8.2075C20.6045 8.44375 21.6178 9.75625 21.6178 11.2V11.6638H17.7867C17.2622 11.6638 16.8178 12.005 16.6667 12.495V12.5213C16.4267 13.2563 16.9867 14 17.76 14H21.6178C22.9245 14 23.9911 12.95 23.9911 11.6638V11.0863C23.9911 9.31875 23.1022 7.76125 21.7511 6.8075H21.76ZM18.6667 5.83625C17.6889 5.83625 16.8889 5.04875 16.8889 4.08625C16.8889 3.12375 17.6889 2.33625 18.6667 2.33625C19.6445 2.33625 20.4445 3.115 20.4445 4.08625C20.4445 5.0575 19.6445 5.83625 18.6667 5.83625Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_kurul">
-                  <rect width="24" height="21" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-            Dergi Kurulu
-          </Link>
+        <div className="bg-white flex items-center justify-between p-5">
+          <div>
+            <Link href="/">
+              <Image src="/icons/home_2.svg" alt="Home" width={24} height={24} />
+            </Link>
+          </div>
+          <div>
+            <nav className="flex items-center gap-10">
+              <Link href="/">Amaç ve Kapsam</Link>
+              <Link href="/">Etik İlkeler ve Yayın Politikası</Link>
+              <Link href="/">Makale Çağrıları</Link>
+              <Link href="/">Sayılar</Link>
+              <Link href="/">İletişim</Link>
+            </nav>
+          </div>
+          <div className="flex items-center gap-3">
+            <Link href="/" className="bg-primary-blue text-white px-4 py-4 rounded-full flex items-center gap-4">
+              <Image src="/icons/kurul_2.svg" alt="Kurul" width={24} height={24} />
+              <span>Dergi Kurulu</span>
+            </Link>
 
-          {/* Yazar Rehberi Button */}
-          <Link
-            href="#"
-            className="flex items-center gap-2 bg-[#A8B95E] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#96a752] transition-colors"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M20.5176 8.72461L22.1211 7.12109C22.6875 6.55469 23 5.80127 23 5C23 4.19873 22.6875 3.44531 22.1211 2.87891C20.9512 1.70898 19.0488 1.70898 17.8789 2.87891L12.7574 8H6C3.24316 8 1 10.2432 1 13V17C1 19.7568 3.24316 22 6 22H18C20.7568 22 23 19.7568 23 17V13C23 11.1677 21.9941 9.58978 20.5176 8.72461ZM19.293 4.29297C19.4883 4.09815 19.7441 4.00049 20 4.00049C20.2559 4.00049 20.5117 4.09815 20.707 4.29346C20.8965 4.48194 21 4.73291 21 5C21 5.26709 20.8965 5.51807 20.707 5.70655L15.0186 11.395C14.8633 11.5508 14.6582 11.6514 14.4395 11.6797L13.1562 11.8438L13.3213 10.5591C13.3486 10.3418 13.4492 10.1362 13.6055 9.98047L19.293 4.29297ZM21 17C21 18.6543 19.6543 20 18 20H6C4.3457 20 3 18.6543 3 17V13C3 11.3457 4.3457 10 6 10H11.4022C11.3781 10.1017 11.3501 10.2026 11.3369 10.3066L11.0078 12.873C10.9688 13.1802 11.0742 13.4883 11.293 13.707C11.4814 13.896 11.7363 14 12 14C12.042 14 12.085 13.9976 12.127 13.9917L14.6934 13.6631C15.3486 13.5796 15.9668 13.2759 16.4336 12.8086L19.0328 10.2094C20.176 10.6306 21 11.7117 21 13L21 17ZM18 17C18 17.5522 17.5527 18 17 18H7C6.44727 18 6 17.5522 6 17C6 16.4478 6.44727 16 7 16H17C17.5527 16 18 16.4478 18 17ZM6 13C6 12.4478 6.44727 12 7 12H8C8.55273 12 9 12.4478 9 13C9 13.5522 8.55273 14 8 14H7C6.44727 14 6 13.5522 6 13Z"
-                fill="white"
-              />
-            </svg>
-            Yazar Rehberi
-          </Link>
+            <Link href="/" className="bg-primary-green text-white px-4 py-4 rounded-full flex items-center gap-4">
+              <Image src="/icons/author_3.svg" alt="Yazar" width={24} height={24} />
+              <span>Yazar Rehberi</span>
+            </Link>
 
-          {/* Search Icon */}
-          <button className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M21.7071 20.2929L17.7319 16.3177C19.0238 14.8286 19.8 12.9005 19.8 10.8C19.8 6.05426 15.9457 2.2 11.2 2.2C6.45426 2.2 2.6 6.05426 2.6 10.8C2.6 15.5457 6.45426 19.4 11.2 19.4C13.3005 19.4 15.2286 18.6238 16.7177 17.3319L20.6929 21.3071C20.8882 21.5024 21.1464 21.6 21.4 21.6C21.6536 21.6 21.9118 21.5024 22.1071 21.3071C22.4976 20.9166 22.4976 20.2834 22.1071 19.8929L21.7071 20.2929ZM11.2 17.4C7.55817 17.4 4.6 14.4418 4.6 10.8C4.6 7.15817 7.55817 4.2 11.2 4.2C14.8418 4.2 17.8 7.15817 17.8 10.8C17.8 14.4418 14.8418 17.4 11.2 17.4Z"
-                fill="#666666"
-              />
-            </svg>
-          </button>
+            <Image src="/icons/search_2.svg" alt="Search" width={55} height={55} />
+          </div>
         </div>
       </div>
     </header>
