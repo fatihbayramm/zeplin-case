@@ -9,12 +9,10 @@ export default function TextSection() {
       <div className="max-w-[1600px] mx-auto px-6">
         <div className="flex gap-8">
           {/* Left - Magazine Cover */}
-          <div className="shrink-0 relative">
+          <div className="shrink-0 relative shadow-xl rounded-2xl">
             {/* Red Banner - Son Sayı */}
-            <div className="absolute left-0 top-[20%] z-20 bg-primary-red text-white px-2 py-6 rounded-r-full flex items-center justify-center">
-              <p className="text-[14px] font-bold" style={{ writingMode: "vertical-rl", textOrientation: "upright" }}>
-                Son Sayı
-              </p>
+            <div className="absolute left-0 top-[20%] z-20">
+              <Image src="/images/text_image_2.png" alt="Son Sayı" width={65} height={155} />
             </div>
 
             {/* Magazine Cover */}

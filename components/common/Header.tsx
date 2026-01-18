@@ -8,14 +8,7 @@ export default function Header() {
       <div className="bg-[#273D89] h-[75px] flex items-center justify-between px-6">
         {/* Logo Section */}
         <Link href="/">
-          <div className="flex items-center gap-3">
-            {/* Logo Circle */}
-
-            <div className="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center border-4 border-[#273D89] shadow-[0_0_0_4px_#A8B95E]">
-              <span className="text-[#273D89] font-bold text-3xl italic">P</span>
-            </div>
-            <span className="text-white text-2xl font-medium tracking-wide">profuture</span>
-          </div>
+          <Image src="/logo/logo.svg" alt="Profuture" width={283} height={91} />
         </Link>
 
         {/* Center - Email */}
