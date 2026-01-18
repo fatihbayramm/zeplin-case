@@ -12,7 +12,6 @@ interface TextCardProps {
 export default function TextCard({ category, type, title, pageRange, authors }: TextCardProps) {
   return (
     <div className="bg-white rounded-2xl shadow-lg p-3 md:p-3 lg:p-4 flex flex-col gap-2">
-      {/* Tags */}
       <div className="flex items-center gap-1.5 md:gap-2 flex-wrap">
         <span className="bg-primary-blue text-white text-[11px] md:text-[12px] xl:text-[14px] px-2.5 md:px-3 xl:px-4 py-1 xl:py-1.5 rounded-full">
           {category}
@@ -22,11 +21,8 @@ export default function TextCard({ category, type, title, pageRange, authors }: 
         </span>
       </div>
 
-      {/* Content */}
       <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-3 md:gap-3 lg:gap-4">
-        {/* Left - Title and Info */}
         <div className="flex-1 min-w-0">
-          {/* Title Section */}
           <div className="flex items-start gap-2 mb-2 md:mb-2 lg:mb-3">
             <Image
               src="/icons/pdf.svg"
@@ -40,7 +36,6 @@ export default function TextCard({ category, type, title, pageRange, authors }: 
             </h3>
           </div>
 
-          {/* Page and Author Info */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 md:gap-3 lg:gap-4 xl:gap-6">
             <div className="flex items-center gap-1.5 md:gap-2">
               <Image
@@ -70,7 +65,6 @@ export default function TextCard({ category, type, title, pageRange, authors }: 
           </div>
         </div>
 
-        {/* Right - Action Buttons */}
         <div className="flex items-center justify-end gap-1.5 md:gap-2 lg:gap-2 xl:gap-3 shrink-0">
           <Link
             href="#"

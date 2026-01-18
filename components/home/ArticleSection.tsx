@@ -16,14 +16,12 @@ export default function ArticleSection() {
 
         <div className="relative z-10 p-6 md:p-0">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8 md:h-[440px]">
-            {/* Left - Magazine Cover */}
             <div className="hidden lg:block shrink-0 relative w-full max-w-[300px] lg:w-[514px] h-[300px] lg:h-[440px] mx-auto lg:mx-0">
               <div className="relative w-full h-full">
                 <Image src="/images/dergison_2.png" alt="Dergi" fill className="object-contain rounded-lg" />
               </div>
             </div>
 
-            {/* Center - Content */}
             <div className="flex-1 max-w-[600px] mx-auto md:mx-0">
               <div className="mb-3 md:mb-4 flex items-center justify-center">
                 <Image src="/icons/promotion.svg" alt="Promotion" width={32} height={32} className="md:w-10 md:h-10" />
@@ -53,7 +51,6 @@ export default function ArticleSection() {
               </div>
             </div>
 
-            {/* Right - Article Cover */}
             <div className="hidden md:block shrink-0 mb-26">
               <div className="relative w-[250px] lg:w-[306px] h-[380px] lg:h-[465px] drop-shadow-2xl mx-auto lg:mx-0">
                 <Image src="/images/article.png" alt="Makale Çağrısı" fill className="object-contain" />

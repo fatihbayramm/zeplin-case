@@ -6,9 +6,7 @@ export default function Footer() {
     <footer className="w-full">
       <div className="bg-footer-bg text-white py-6 md:py-8 px-4 md:px-6">
         <div className="max-w-[1600px] mx-auto">
-          {/* Main Content Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
-            {/* Column 1 - Dergi Editörü */}
             <div className="flex items-start md:items-center gap-3 md:gap-4">
               <Image
                 src="/icons/personal.svg"
@@ -33,7 +31,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Column 2 - Mail Adresi */}
             <div className="flex items-start md:items-center gap-3 md:gap-4 md:justify-center">
               <Image
                 src="/icons/mail.svg"
@@ -53,7 +50,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Column 3 - Adres */}
             <div className="flex items-start md:items-center gap-3 md:gap-4 md:justify-end">
               <Image
                 src="/icons/mail.svg"
@@ -70,7 +66,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Disclaimer */}
           <div className="border-t border-white/20 pt-4 md:pt-6">
             <p className="text-white/60 text-[12px] md:text-[15px] text-center leading-relaxed max-w-8xl mx-auto italic px-2">
               Bu sitede yer alan tüm yazılı, görsel ve uygulama içerikleri kaynak gösterilmeden kullanılamaz. Site
@@ -82,7 +77,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Red Bar */}
       <div className="bg-footer-red py-2 md:py-3">
         <p className="text-white text-center text-[11px] md:text-sm px-4">
           Profuture Teknoloji - Tüm Hakları Saklıdır. © 2025

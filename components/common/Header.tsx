@@ -118,7 +118,6 @@ export default function Header() {
         </div>
       )}
 
-      {/* Mobile Menu Overlay */}
       {isMobile && isMenuOpen && (
         <div className="fixed inset-0 top-[60px] bg-white z-[999] p-5 flex flex-col gap-6 lg:hidden overflow-y-auto">
           <nav className="flex flex-col gap-4 text-secondary-dark text-[16px] font-medium border-b pb-6">

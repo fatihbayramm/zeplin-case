@@ -14,14 +14,11 @@ interface MagazineCardProps {
 export default function MagazineCard({ title, coverImage, cilt, sayi, date, isNew = false, slug }: MagazineCardProps) {
   return (
     <div className="bg-white rounded-2xl shadow-lg p-3 md:p-4 flex gap-3 md:gap-4 w-full items-stretch">
-      {/* Left - Cover Image */}
       <div className="relative w-[100px] md:w-[140px] rounded-lg overflow-hidden shrink-0 flex items-center">
         <Image src={coverImage} alt={title} fill className="object-contain" />
       </div>
 
-      {/* Right - Content */}
       <div className="flex flex-col flex-1 min-w-0">
-        {/* Top Row - PDF Icon and New Badge */}
         <div className="flex items-center justify-between mb-2">
           <Image src="/icons/pdf.svg" alt="PDF" width={20} height={20} className="md:w-[25px] md:h-[25px]" />
           {isNew && (
@@ -31,19 +28,16 @@ export default function MagazineCard({ title, coverImage, cilt, sayi, date, isNe
           )}
         </div>
 
-        {/* Category Tag */}
         <div>
           <p className="inline text-primary-dark bg-secondary-gray text-[12px] md:text-[14px] mb-1 px-2 py-0.5 rounded-xl">
             Dergi
           </p>
         </div>
 
-        {/* Title */}
         <h4 className="text-primary-dark text-[16px] md:text-[20px] font-bold leading-tight mb-2 md:mb-3 mt-2 md:mt-3">
           {title}
         </h4>
 
-        {/* Cilt and Sayı */}
         <div className="flex items-center gap-4 md:gap-9 text-[10px] md:text-[12px] text-gray-600 mb-2">
           <div className="flex items-center gap-1">
             <Image src="/icons/cilt_2.svg" alt="Cilt" width={14} height={14} className="md:w-[18px] md:h-[18px]" />
@@ -59,13 +53,11 @@ export default function MagazineCard({ title, coverImage, cilt, sayi, date, isNe
           </div>
         </div>
 
-        {/* Date */}
         <div className="flex items-center gap-1 mb-3 md:mb-4">
           <Image src="/icons/calendar_2.svg" alt="Tarih" width={14} height={14} className="md:w-[18px] md:h-[18px]" />
           <span className="text-[14px] md:text-[16px] text-secondary-dark font-semibold">{date}</span>
         </div>
 
-        {/* Action Buttons */}
         <div className="flex items-center justify-center gap-1.5 md:gap-2 mt-auto">
           <Link
             href="#"

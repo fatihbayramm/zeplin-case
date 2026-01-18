@@ -14,19 +14,16 @@ export default function MagazineSection() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        // Mobile
         setCardsToShow(1);
         setGapSize(16);
       } else if (window.innerWidth < 1280) {
-        // Tablet (768px - 1279px) and 1024px
         setCardsToShow(2);
         setGapSize(20);
       } else {
-        // Desktop (1280px+)
         setCardsToShow(3);
         setGapSize(24);
       }
-      // Reset index when switching between breakpoints
+
       setCurrentIndex(0);
     };
 
@@ -53,7 +50,6 @@ export default function MagazineSection() {
   return (
     <section className="bg-white py-10 md:py-16">
       <div className="flex flex-col md:flex-row md:justify-between max-w-[1600px] mx-auto px-4 md:px-6 gap-4 md:gap-0">
-        {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10 mb-4 md:mb-8">
           <div>
             <h2 className="text-primary-gray text-[18px] md:text-[22px]">Sayılar</h2>
@@ -84,7 +80,6 @@ export default function MagazineSection() {
           </div>
         </div>
 
-        {/* View All Button */}
         <div>
           <Link
             href="#"
@@ -108,7 +103,6 @@ export default function MagazineSection() {
         </div>
       </div>
 
-      {/* Cards Container */}
       <div className="relative overflow-hidden max-w-[1600px] mx-auto px-4 md:px-0">
         <div
           className="flex transition-transform duration-500 ease-in-out py-4 md:p-10"

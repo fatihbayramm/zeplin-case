@@ -8,7 +8,6 @@ export default function TextSection() {
     <section className="bg-white py-10 md:py-20 w-full">
       <div className="max-w-[1600px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-6 md:gap-8">
-          {/* Left - Magazine Cover */}
           <div className="w-full md:w-auto md:shrink-0 relative shadow-xl rounded-2xl mx-auto md:mx-0">
             <div className="absolute left-0 top-[15%] md:top-[20%] z-20">
               <Image
@@ -38,7 +37,6 @@ export default function TextSection() {
             </div>
           </div>
 
-          {/* Right - Articles List */}
           <div className="flex-1 w-full">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4">
               <div>
