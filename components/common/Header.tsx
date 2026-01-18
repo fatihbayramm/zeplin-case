@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="h-[135px] w-full">
+    <header className="h-[135px] w-full sticky top-0 z-1000">
       {/* Top Bar - Dark Blue */}
       <div className="bg-[#273D89] h-[75px] flex items-center justify-between px-6">
         {/* Logo Section */}
