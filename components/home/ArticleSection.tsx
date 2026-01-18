@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function ArticleSection() {
   return (
     <section className="relative w-full py-10 md:py-20 overflow-hidden px-4 md:px-0">
-      <div className="relative max-w-[1600px] min-h-[440px] md:h-[440px] mx-auto">
+      <div className="relative max-w-[1600px] min-h-[440px] md:h-[440px] mx-auto px-4 md:px-6">
         <div className="absolute inset-0 -z-10">
           <Image
             src="/images/article_background.png"

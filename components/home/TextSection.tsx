@@ -5,8 +5,8 @@ import { articles } from "@/data/articles/articles";
 
 export default function TextSection() {
   return (
-    <section className="bg-white py-10 md:py-20">
-      <div className="max-w-[1600px] mx-auto px-4 md:px-6">
+    <section className="bg-white py-10 md:py-20 w-full">
+      <div className="max-w-[1600px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-6 md:gap-8">
           {/* Left - Magazine Cover */}
           <div className="w-full md:w-auto md:shrink-0 relative shadow-xl rounded-2xl mx-auto md:mx-0">
